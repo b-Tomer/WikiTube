@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+
+    <section class="main-container">
+        <div class="header-container">
+            <h1>WikiTube.</h1>
+        </div>
+
+        <div class="search-container">
+            <input onchange="onSearch(value)" class="search-bar" type="search">
+        </div>
+
+        <div class="tube-container">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/DtJzr1Wcy_s">
+            </iframe>
+        </div>
+
+        <div class="wiki-container">
+            
+        </div>
+
+        <div class="previews-container">
+          
+        </div>
+
+
+
+    </section>
+
+    <script src="lib/swal.js"></script>
+    <script src="lib/axios.js"></script>
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/wiki.service.js"></script>
+    <script src="js/services/youTube.service.js"></script>
+    <script src="js/controllers/main.controller.js"></script>
+    <script src="js/controllers/wiki.controller.js"></script>
+    <script src="js/controllers/youTube.controller.js.js"></script>
+</body>
+
+</html>
